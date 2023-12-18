@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+		<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img style="width: 60px; height: auto" src="images/blazorWallpaper.png" alt="Logo" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="products.html">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="shoppingCart.html">Shopping Cart</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container mt-5">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="display-1">Products for people that for some reason like to run for fun!</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mx-auto">
+						<div class="splide" id="image-slider">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<img class="img-fluid" src="images/gabin-vallet-YxCrQm9XNgg-unsplash.jpg" alt="Slide 1" />
+									</li>
+									<li class="splide__slide">
+										<img class="img-fluid" src="images/gentrit-sylejmani-JjUyjE-oEbM-unsplash.jpg" alt="Slide 2" />
+									</li>
+									<li class="splide__slide">
+										<img class="img-fluid" src="images/markus-spiske-WUehAgqO5hE-unsplash.jpg" alt="Slide 3" />
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<h1 class="card-title">Creative Store Name</h1>
+							<img class="card-img-top img-fluid" src="images/HeroHome1.jpg" alt="Card image cap" />
+							<p class="card-text h3">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien non metus varius tincidunt. Proin iaculis urna id arcu sodales
+								bibendum. Nulla facilisi.
+							</p>
+							<p class="card-text">
+								Phasellus bibendum ex sed elit posuere, a mollis massa ultrices. Nullam sit amet metus vel odio fermentum tincidunt. Vivamus auctor
+								quam et est sollicitudin, eu eleifend nisi posuere.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 pb-5">
+					<div class="card">
+						<div class="card-body">
+							<h1 class="card-title">Creative Store Name</h1>
+							<img class="card-img-top img-fluid" src="images/homehero2.jpg" alt="Card image cap" />
+							<p class="card-text h3">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien non metus varius tincidunt. Proin iaculis urna id arcu sodales
+								bibendum. Nulla facilisi.
+							</p>
+							<p class="card-text">
+								Phasellus bibendum ex sed elit posuere, a mollis massa ultrices. Nullam sit amet metus vel odio fermentum tincidunt. Vivamus auctor
+								quam et est sollicitudin, eu eleifend nisi posuere.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				new Splide("#image-slider", {
+					type: "loop",
+					width: "100vw",
+					perPage: 1,
+					autoplay: true,
+					interval: 10000,
+					pauseOnHover: false,
+				}).mount();
+			});
+		</script>
+		
+	</body>
+</html>

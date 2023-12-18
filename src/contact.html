@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="secrets.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+				<img style="width: 60px; height: auto;" src="images/blazorWallpaper.png" alt="Logo"> 
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="products.html">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="shoppingCart.html">Shopping Cart</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="container">
+				<h1 class="mt-5">Contact Us</h1>
+				<h6>We would love to hear from you!<br />Please contact us if you have any questions or concerns.</h6>
+				<form>
+					<div class="mb-3">
+						<label for="name" class="form-label">Name:</label>
+						<input type="text" class="form-control" id="name" name="name" />
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Email:</label>
+						<input type="text" class="form-control" id="email" name="email" />
+					</div>
+					<div class="mb-3">
+						<label for="message" class="form-label">Message:</label>
+						<textarea class="form-control" id="message" name="message"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				<h2 class="mt-5">Our Contact Information</h2>
+				<p>Email: creative@creativestorename.com</p>
+				<p>Phone: 123-456-7890</p>
+				<p>Address: 3301 N. Mulford Rd, Rockford, IL</p>
+			</div>
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col-md-6 mb-5">
+						<div id="storeMap" style="width: 100%; height: 400px;"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js\jquery-ui.min.js"></script>
+		<script src="js\apiMap.js"></script>
+		<script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=initMap" async defer></script>
+		<script src="js\bootstrap.min.js"></script>
+	</body>
+</html>
